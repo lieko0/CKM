@@ -1,6 +1,4 @@
-# Titulo do Projeto
-
-CKM
+# Sistema de Gerenciamento
 
 ## Sobre
 
@@ -32,6 +30,6 @@ O sistema implementado tem o objetivo de ajudar no gerenciamento de uma empresa.
 
 ## Desenvolvedores
 
-- [Caio Silva](https://github.com/CaioMatheu5)
+- [Caio Silva](https://github.com/CaioMatheu5) :dragon:
 - [Katarina Friedrich](https://github.com/katfr) :cat:
-- [Marco Magalhães](https://github.com/lieko0) :mushroom:
+- [Marco Magalhães](https://github.com/lieko0) :owl:
