@@ -29,5 +29,5 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 ## Desenvolvedores
 
 - [Caio Silva](https://github.com/CaioMatheu5)
-- [Katarina Friedrich](https://github.com/katfr)
+- [Katarina Friedrich](https://github.com/katfr) :cat:
 - [Marco Magalhães](https://github.com/lieko0) :mushroom:
