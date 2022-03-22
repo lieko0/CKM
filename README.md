@@ -6,7 +6,7 @@ O sistema implementado tem o objetivo de ajudar no gerenciamento de uma empresa.
 
 ## :pencil2: Protótipo do projeto
 
--   **[Figma](https://www.figma.com/)**
+-   **[Figma](https://www.figma.com/file/a6pjKOil2gnofPOERM9okO/Projeto-CKM?node-id=0%3A1)**
 
 ## Tecnologias Utilizadas
 
