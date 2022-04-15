@@ -18,7 +18,7 @@ O sistema implementado tem o objetivo de ajudar no gerenciamento de uma empresa.
   </tr>
   <tr>
     <td><img alt="PHP" height="30" width="40"  src="https://www.php.net//images/logos/new-php-logo.svg" /></td>
-    <td><a href="www.php.net/" target="_blank">PHP 8.1.4</a></td>
+    <td><a href="https://www.php.net/docs.php" target="_blank">PHP 8.1.4</a></td>
     <td>PHP para o back-end</td>
   </tr>
   <tr>
