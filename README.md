@@ -22,8 +22,8 @@ O sistema implementado tem o objetivo de ajudar no gerenciamento de uma empresa.
     <td>PHP para o back-end</td>
   </tr>
   <tr>
-    <td><img alt="MySQL" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" /></td>
-    <td><a href="https://dev.mysql.com/doc/" target="_blank">MySQL</a></td>
+    <td><img alt="MariaDB" height="30" width="40" src="https://mariadb.com/wp-content/uploads/2019/11/mariadb-logo-vert_blue-transparent-300x245.png" /></td>
+    <td><a href="https://mariadb.com" target="_blank">MySQL</a></td>
     <td>Sistema de gerenciamento de banco de dados</td>
   </tr>
 </table>
