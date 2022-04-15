@@ -23,7 +23,7 @@ O sistema implementado tem o objetivo de ajudar no gerenciamento de uma empresa.
   </tr>
   <tr>
     <td><img alt="MariaDB" height="30" width="40" src="https://mariadb.com/wp-content/uploads/2019/11/mariadb-logo-vert_blue-transparent-300x245.png" /></td>
-    <td><a href="https://mariadb.com" target="_blank">MySQL</a></td>
+    <td><a href="https://mariadb.com" target="_blank">MariaDB</a></td>
     <td>Sistema de gerenciamento de banco de dados</td>
   </tr>
 </table>
