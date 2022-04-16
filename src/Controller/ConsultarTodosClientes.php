@@ -33,6 +33,11 @@ if($res->num_rows > 0) {
             </style>
             </head>
             <body>
+            
+            <div class='topnav'>
+                <a class='active' href='..\index.html'>Início</a>
+                <a href='..\View\Cliente.html'>Voltar</a>
+            </div>
 
             <h2>Clientes</h2><table>
             <tr>

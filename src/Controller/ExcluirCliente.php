@@ -64,7 +64,10 @@ if($res->num_rows > 0) {
     }
 }
 else {
-    echo "<script>alert('Cliente não encontrado.')</script>";
+    echo "<script>
+    alert('CPF não encontrado.');
+    location.href ='../View/ExcluirCliente.html';
+    </script>";
 }
 
 ?>

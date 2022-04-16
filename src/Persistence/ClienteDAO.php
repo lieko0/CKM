@@ -10,11 +10,24 @@ class ClienteDAO {
         $cliente->getCpf()."', '".
         $cliente->getEmail()."')";
 
-        if ($conn->query($sql) == TRUE) {
-            echo "Cliente salvo.";
-        }
-        else {
-            echo "Erro no cadastramento: <br>".$conn->error;
+        try {
+            $conn->query($sql);
+            echo "<script>
+            alert('Cliente cadastrado com sucesso.');
+            location.href ='../View/CadastrarCliente.html';
+            </script>";
+        } catch (mysqli_sql_exception $e) {
+            if ($e->getCode() == 1062) {
+                echo "<script>
+                alert('Erro: CPF digitado já existe.');
+                location.href ='../View/CadastrarCliente.html';
+                </script>";
+            } else {
+                echo "<script>
+                alert('Erro no cadastramento: .$conn->error');
+                location.href ='../View/CadastrarCliente.html';
+                </script>";
+            }
         }
     }
 
@@ -42,10 +55,13 @@ class ClienteDAO {
         WHERE Cpf='$antigoCpf'";
 
         if ($conn->query($sql) == TRUE) {
-            echo "Alteração bem sucedida.";
+            echo "<script>
+            alert('Alteração bem sucedida');
+            location.href ='../View/AlterarCliente.html';
+            </script>";
         }
         else {
-            echo "Erro no cadastramento: <br>".$conn->error;
+            echo "Erro na alteração: <br>".$conn->error;
         }
     }
 

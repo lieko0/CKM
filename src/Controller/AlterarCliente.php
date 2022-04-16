@@ -24,6 +24,10 @@ if($res->num_rows == 1) {
     </head>
     
     <body>
+        <div class='topnav'>
+            <a class='active' href='..\index.html'>Início</a>
+            <a href='..\View\Cliente.html'>Voltar</a>
+        </div>
     
         <h1>SISTEMA DE GERENCIMENTO</h1>
         <h2>Alterar Cliente</h2>
@@ -34,22 +38,25 @@ if($res->num_rows == 1) {
             <input type='text' required  id='cnome' name='cnome' maxlength='50' value='".$registro['Nome']."'><br>
     
             <label for='ccpf'>CPF:</label><br>
-            <input type='text' required id='ccpf' name='ccpf' placeholder='XXXXXXXXX-XX' value='".$registro['Cpf']."'><br>
+            <input type='text' required id='ccpf' name='ccpf' value='".$registro['Cpf']."'
+            minlength='11' maxlength='14' title='Digite o CPF no formato nnn.nnn.nnn-nn ou apenas 11 n's' pattern='\d{3}\.?\d{3}\.?\d{3}-?\d{2}'><br>
     
             <label for='cemail'>Email:</label><br>
             <input type='email' required id='cemail' name='cemail' pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$' value='".$registro['Email']."'><br>
 
-            <input type='hidden' type=text id='antigocpf' name='antigocpf' maxlength='50' value='".$cpf."'>
+            <input type='hidden' type=text id='antigocpf' name='antigocpf' maxlength='50' value='".$cpf."'><br>
     
             <input type='submit' value='ALTERAR'>
-            <input type='reset' value='LIMPAR'>    
         </form>
     
     </body>
     </html>";
 }
 else {
-    echo "<script>alert('Cliente não encontrado.')</script>";
+    echo "<script>
+    alert('CPF não encontrado.');
+    location.href ='../View/AlterarCliente.html';
+    </script>";
 }
 
 ?>

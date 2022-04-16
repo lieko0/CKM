@@ -36,6 +36,11 @@ if($res->num_rows > 0) {
             </head>
             <body>
 
+            <div class='topnav'>
+                <a class='active' href='..\index.html'>Início</a>
+                <a href='..\View\Cliente.html'>Voltar</a>
+            </div>
+
             <h2>Cliente</h2><table>
             <tr>
                 <th>ID</th>
@@ -56,7 +61,10 @@ if($res->num_rows > 0) {
     echo "</table></body></html>";
 }
 else {
-    echo "<script>alert('CPF não encontrado.')</script>";
+    echo "<script>
+    alert('CPF não encontrado.');
+    location.href ='../View/ConsultarCliente.html';
+    </script>";
 }
 
 ?>
