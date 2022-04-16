@@ -8,7 +8,7 @@ O sistema implementado tem o objetivo de ajudar no gerenciamento de uma empresa.
 
 -   **[Figma](https://www.figma.com/file/a6pjKOil2gnofPOERM9okO/Projeto-CKM?node-id=0%3A1)**
 
-## Tecnologias Utilizadas
+## :computer: Tecnologias Utilizadas
 
 <table border-collapse=collapse>
   <tr>
@@ -30,7 +30,7 @@ O sistema implementado tem o objetivo de ajudar no gerenciamento de uma empresa.
   </tr>
 </table>
 
-## Regras de Uso do Git
+## :books: Regras de Uso do Git
 
 - A mensagem de commit deve seguir o seguinte padrão:
     - Estrutura: "(adição, alteração, correção, exclusão) de nomeDoItem-backlogReferente"
@@ -48,8 +48,8 @@ O sistema implementado tem o objetivo de ajudar no gerenciamento de uma empresa.
         └── Diagramas de Projeto
     ```
 
-## Desenvolvedores
+## :sunglasses: Desenvolvedores
 
-- [Caio Silva](https://github.com/CaioMatheu5) :dragon:
+- [Caio Silva](https://github.com/CaioMatheu5) :wolf:
 - [Katarina Friedrich](https://github.com/katfr) :cat:
 - [Marco Magalhães](https://github.com/lieko0) :owl:
