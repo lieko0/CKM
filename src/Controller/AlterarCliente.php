@@ -34,7 +34,7 @@ if($res->num_rows == 1) {
             <input type='text' required  id='cnome' name='cnome' maxlength='50' value='".$registro['Nome']."'><br>
     
             <label for='ccpf'>CPF:</label><br>
-            <input type='text' required id='ccpf' name='ccpf' placeholder='XXXXXXXXX-XX' value='".$registro['Cpf']."'><br>
+            <input type='text' required minlength='11' maxlength='11' id='ccpf' name='ccpf' placeholder='XXXXXXXXX-XX' value='".$registro['Cpf']."'><br>
     
             <label for='cemail'>Email:</label><br>
             <input type='email' required id='cemail' name='cemail' pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$' value='".$registro['Email']."'><br>
