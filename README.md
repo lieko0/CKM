@@ -19,12 +19,12 @@ O sistema implementado tem o objetivo de ajudar no gerenciamento de uma empresa.
     <td>Front-end</td>
   </tr>
   <tr>
-    <td><img alt="PHP" height="30" width="40"  src="https://www.php.net//images/logos/new-php-logo.svg" /></td>
+    <td align ="center"><img alt="PHP"  height="30" width="40"  src="https://www.php.net//images/logos/new-php-logo.svg" /></td>
     <td><a href="https://www.php.net/docs.php" target="_blank">PHP 8.1.4</a></td>
-    <td>PHP para o back-end</td>
+    <td>Back-end</td>
   </tr>
   <tr>
-    <td><img alt="MariaDB" height="30" width="40" src="https://mariadb.org/wp-content/themes/twentynineteen-child/icons/logo_seal.svg" /></td>
+    <td align ="center"><img alt="MariaDB" height="30" width="40" src="https://mariadb.org/wp-content/themes/twentynineteen-child/icons/logo_seal.svg" /></td>
     <td><a href="https://mariadb.com" target="_blank">MariaDB 10.4.24</a></td>
     <td>Sistema de gerenciamento de banco de dados</td>
   </tr>
