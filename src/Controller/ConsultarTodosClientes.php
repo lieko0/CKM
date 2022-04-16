@@ -57,6 +57,11 @@ if($res->num_rows > 0) {
 
     }
     echo "</table></body></html>";
+} else {
+    echo "<script>
+    alert('Não há clientes cadastrados');
+    location.href ='../View/Cliente.html';
+    </script>";
 }
 
 ?>

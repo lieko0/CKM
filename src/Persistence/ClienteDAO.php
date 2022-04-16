@@ -54,14 +54,24 @@ class ClienteDAO {
         Nome='".$cliente->getNome()."', Cpf ='".$cliente->getCpf()."', Email='".$cliente->getEmail()."'
         WHERE Cpf='$antigoCpf'";
 
-        if ($conn->query($sql) == TRUE) {
+        try {
+            $conn->query($sql);
             echo "<script>
             alert('Alteração bem sucedida');
             location.href ='../View/AlterarCliente.html';
             </script>";
-        }
-        else {
-            echo "Erro na alteração: <br>".$conn->error;
+        } catch (mysqli_sql_exception $e) {
+            if ($e->getCode() == 1062) {
+                echo "<script>
+                alert('Erro: CPF digitado já existe.');
+                location.href ='../View/AlterarCliente.html';
+                </script>";
+            } else {
+                echo "<script>
+                alert('Erro na alteraçõa: .$conn->error');
+                location.href ='../View/AlterarCliente.html';
+                </script>";
+            }
         }
     }
 
