@@ -12,9 +12,9 @@ O sistema implementado tem o objetivo de ajudar no gerenciamento de uma empresa.
 
 <table border-collapse=collapse>
   <tr>
-    <td><img alt="Angular" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" /> </td>
-    <td><a href="https://angular.io/docs" target="_blank">Angular 11</a></td>
-    <td>Framework JavaScript para o front-end</td>
+    <td><img alt="HTML CSS" height="30" width="40" src="https://www.pinclipart.com/picdir/middle/336-3368555_html-css-javascript-icons-clipart.png" /> </td>
+    <td><a href="https://www.w3schools.com/html/" target="_blank">HTML, CSS e Javascript</a></td>
+    <td>Front-end</td>
   </tr>
   <tr>
     <td><img alt="PHP" height="30" width="40"  src="https://www.php.net//images/logos/new-php-logo.svg" /></td>
@@ -22,7 +22,7 @@ O sistema implementado tem o objetivo de ajudar no gerenciamento de uma empresa.
     <td>PHP para o back-end</td>
   </tr>
   <tr>
-    <td><img alt="MariaDB" height="30" width="40" src="https://mariadb.com/wp-content/uploads/2019/11/mariadb-logo-vert_blue-transparent-300x245.png" /></td>
+    <td><img alt="MariaDB" height="30" width="40" src="https://mariadb.org/wp-content/themes/twentynineteen-child/icons/logo_seal.svg" /></td>
     <td><a href="https://mariadb.com" target="_blank">MariaDB 10.4.24</a></td>
     <td>Sistema de gerenciamento de banco de dados</td>
   </tr>
