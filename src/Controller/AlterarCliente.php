@@ -31,13 +31,13 @@ if($res->num_rows == 1) {
         <form id='formulario' action='..\Controller\AlterarClienteDefinitivo.php' method='post' autocomplete='off'>
     
             <label for='cnome'>Nome:</label><br>
-            <input type='text' id='cnome' name='cnome' maxlength='50' value='".$registro['Nome']."'><br>
+            <input type='text' required  id='cnome' name='cnome' maxlength='50' value='".$registro['Nome']."'><br>
     
             <label for='ccpf'>CPF:</label><br>
-            <input type='text' id='ccpf' name='ccpf' placeholder='XXXXXXXXX-XX' value='".$registro['Cpf']."'><br>
+            <input type='text' required id='ccpf' name='ccpf' placeholder='XXXXXXXXX-XX' value='".$registro['Cpf']."'><br>
     
             <label for='cemail'>Email:</label><br>
-            <input type='email' id='cemail' name='cemail' pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$' value='".$registro['Email']."'><br>
+            <input type='email' required id='cemail' name='cemail' pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$' value='".$registro['Email']."'><br>
 
             <input type='hidden' type=text id='antigocpf' name='antigocpf' maxlength='50' value='".$cpf."'>
     
