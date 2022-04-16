@@ -12,7 +12,7 @@ O sistema implementado tem o objetivo de ajudar no gerenciamento de uma empresa.
 
 <table border-collapse=collapse>
   <tr>
-    <td><img alt="HTML CSS" height="30" width="40" src="https://www.pinclipart.com/picdir/middle/336-3368555_html-css-javascript-icons-clipart.png" /> </td>
+    <td><img alt="HTML CSS" height="30" width="40" src="http://angelrivera3000.github.io/img/portfolio/html5-css3-1.png" /> </td>
     <td><a href="https://www.w3schools.com/html/" target="_blank">HTML, CSS e Javascript</a></td>
     <td>Front-end</td>
   </tr>
