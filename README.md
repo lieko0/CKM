@@ -33,19 +33,18 @@ O sistema implementado tem o objetivo de ajudar no gerenciamento de uma empresa.
 ## :books: Regras de Uso do Git
 
 - A mensagem de commit deve seguir o seguinte padrão:
-    - Estrutura: "(adição, alteração, correção, exclusão) de nomeDoItem-backlogReferente"
-    - Ex.: "adição de Pessoa.class-[RF001] Criar Cliente"
-    - Adição: Inserção de um ou mais arquivos.
-    - Alteração: Edição de um ou mais arquivos
-    - Correção: Correção de algum erro em um ou mais arquivos.
-    - Exclução: Remoção de um ou mais arquivos.
+    - Estrutura: "(adição, alteração, correção, exclusão) de nomeDoItem - backlogReferente(opcional)"
+    - Ex.: "Adição de Cliente.php - [RF001] Criar Cliente"
+      - Adição: Inserção de um ou mais arquivos.
+      - Alteração: Edição de um ou mais arquivos
+      - Correção: Correção de algum erro em um ou mais arquivos.
+      - Exclução: Remoção de um ou mais arquivos.
     
 - Organização dos diretórios:
      ```
     ├── src(Codigo)
     ├── Padrões Adotados
     └── Requisitos
-        └── Diagramas de Projeto
     ```
 
 ## :sunglasses: Desenvolvedores
