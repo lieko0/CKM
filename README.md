@@ -42,9 +42,14 @@ O sistema implementado tem o objetivo de ajudar no gerenciamento de uma empresa.
     
 - Organização dos diretórios:
      ```
-    ├── src(Codigo)
+    ├── Banco de Dados
     ├── Padrões Adotados
-    └── Requisitos
+    ├── Requisitos
+    ├── src(Codigo)
+      └── Model
+      └── View
+      └── Controller
+      └── Persistence
     ```
 
 ## :sunglasses: Desenvolvedores
