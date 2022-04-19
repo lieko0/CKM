@@ -51,6 +51,14 @@ O sistema implementado tem o objetivo de ajudar no gerenciamento de uma empresa.
       └── Controller
       └── Persistence
     ```
+## :computer: Práticas de codificação adotadas:
+
+- Usar e manter o padrão MVC;
+- Identar o código;
+- Nomear funções de maneira intuitiva;
+- Comentar somente códigos onde a lógica não é trivial;
+- Buscar a criação de loops que percoram somente o necessário;
+- Utilizar blocos try e catch.
 
 ## :sunglasses: Desenvolvedores
 
