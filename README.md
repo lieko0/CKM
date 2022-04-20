@@ -58,7 +58,8 @@ O sistema implementado tem o objetivo de ajudar no gerenciamento de uma empresa.
 - Nomear funções de maneira intuitiva;
 - Comentar somente códigos onde a lógica não é trivial;
 - Buscar a criação de loops que percoram somente o necessário;
-- Utilizar blocos try e catch.
+- Utilizar blocos try e catch para o tratamento de exceções.
+
 
 ## :sunglasses: Desenvolvedores
 
