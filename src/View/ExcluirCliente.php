@@ -1,3 +1,8 @@
+<?php
+
+include('protect.php')
+
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -7,23 +12,24 @@
 </head>
 
 <body>
+
     <div class="topnav">
-        <a class="active" href="..\index.html">Início</a>
-        <a href="..\View\Cliente.html">Voltar</a>
+        <a class="active" href="Home.php">Início</a>
+        <a href="..\View\Cliente.php">Voltar</a>
     </div>
 
     <h1>SISTEMA DE GERENCIMENTO</h1>
-    <h2>Alterar Cliente</h2>
+    <h2>Excluir Cliente</h2>
 
-    <form id="formulario" action="..\Controller\AlterarCliente.php" method="post" autocomplete="off">
+    <form id="formulario" action="..\Controller\ExcluirCliente.php" method="post" autocomplete="off">
 
         <label for="ccpf">CPF:</label><br>
-        <input type="text" required  id="ccpf" name="ccpf" 
+        <input type="text" required  id="ccpf" name="ccpf"
         minlength="11" maxlength="14" title="Digite o CPF no formato nnn.nnn.nnn-nn ou apenas 11 n's" pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}"><br><br>
 
-        <input type="submit" value="PROCURAR">
+        <input type="submit" value="EXCLUIR">
         <input type="reset" value="LIMPAR">
-
+        
 
     </form>
 

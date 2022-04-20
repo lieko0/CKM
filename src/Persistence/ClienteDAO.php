@@ -14,18 +14,18 @@ class ClienteDAO {
             $conn->query($sql);
             echo "<script>
             alert('Cliente cadastrado com sucesso.');
-            location.href ='../View/CadastrarCliente.html';
+            location.href ='../View/CadastrarCliente.php';
             </script>";
         } catch (mysqli_sql_exception $e) {
             if ($e->getCode() == 1062) {
                 echo "<script>
                 alert('Erro: CPF digitado já existe.');
-                location.href ='../View/CadastrarCliente.html';
+                location.href ='../View/CadastrarCliente.php';
                 </script>";
             } else {
                 echo "<script>
                 alert('Erro no cadastramento: .$conn->error');
-                location.href ='../View/CadastrarCliente.html';
+                location.href ='../View/CadastrarCliente.php';
                 </script>";
             }
         }
@@ -58,18 +58,18 @@ class ClienteDAO {
             $conn->query($sql);
             echo "<script>
             alert('Alteração bem sucedida');
-            location.href ='../View/AlterarCliente.html';
+            location.href ='../View/AlterarCliente.php';
             </script>";
         } catch (mysqli_sql_exception $e) {
             if ($e->getCode() == 1062) {
                 echo "<script>
                 alert('Erro: CPF digitado já existe.');
-                location.href ='../View/AlterarCliente.html';
+                location.href ='../View/AlterarCliente.php';
                 </script>";
             } else {
                 echo "<script>
                 alert('Erro na alteraçõa: .$conn->error');
-                location.href ='../View/AlterarCliente.html';
+                location.href ='../View/AlterarCliente.php';
                 </script>";
             }
         }

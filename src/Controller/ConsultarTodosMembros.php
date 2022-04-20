@@ -35,8 +35,8 @@ if($res->num_rows > 0) {
             <body>
             
             <div class='topnav'>
-                <a class='active' href='..\index.html'>Início</a>
-                <a href='..\View\Membro.html'>Voltar</a>
+                <a class='active' href='..\View\Home.php'>Início</a>
+                <a href='..\View\Membro.php'>Voltar</a>
             </div>
 
             <h2>Membros</h2><table>
@@ -60,7 +60,7 @@ if($res->num_rows > 0) {
 } else {
     echo "<script>
     alert('Não há membros cadastrados');
-    location.href ='../View/Membro.html';
+    location.href ='../View/Membro.php';
     </script>";
 }
 

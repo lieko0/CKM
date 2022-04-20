@@ -1,4 +1,9 @@
 <?php
+
+include('..\protect.php')
+
+?>
+<?php
 include_once "..\..\Persistence\Connection.php";
 include_once "..\..\Persistence\ClienteDAO.php";
 include_once "..\..\Persistence\MembroDAO.php";
@@ -24,8 +29,8 @@ $todos_membros = $membroDao->consultarTodosMembros($conexao);
 
 <body>
     <div class="topnav">
-        <a class="active" href="..\..\index.html">Início</a>
-        <a href="..\Projeto.html">Voltar</a>
+        <a class="active" href="..\Home.php">Início</a>
+        <a href="..\Projeto.php">Voltar</a>
     </div>
 
     <h1>SISTEMA DE GERENCIMENTO</h1>
