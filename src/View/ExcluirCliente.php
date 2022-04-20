@@ -25,7 +25,7 @@ include('protect.php')
 
         <label for="ccpf">CPF:</label><br>
         <input type="text" required  id="ccpf" name="ccpf"
-        minlength="11" maxlength="14" title="Digite o CPF no formato nnn.nnn.nnn-nn ou apenas 11 n's" pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}"><br><br>
+        minlength="11" maxlength="11" placeholder="Apenas números" pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}"><br><br>
 
         <input type="submit" value="EXCLUIR">
         <input type="reset" value="LIMPAR">
