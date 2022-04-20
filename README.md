@@ -60,6 +60,7 @@ O sistema implementado tem o objetivo de ajudar no gerenciamento de uma empresa.
 - Buscar a criação de loops que percoram somente o necessário;
 - Utilizar blocos try e catch para o tratamento de exceções.
 
+
 ## :sunglasses: Desenvolvedores
 
 - [Caio Silva](https://github.com/CaioMatheu5) :wolf:
