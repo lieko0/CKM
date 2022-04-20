@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 20-Abr-2022 às 06:54
+-- Tempo de geração: 20-Abr-2022 às 14:39
 -- Versão do servidor: 10.4.22-MariaDB
 -- versão do PHP: 8.1.2
 
@@ -39,8 +39,7 @@ CREATE TABLE `clientes` (
 --
 
 INSERT INTO `clientes` (`Id`, `Nome`, `Email`, `Cpf`) VALUES
-(35, 'Pão', 'dwadwa@fw.daw', '31233123123'),
-(36, 'Carlos', 'fe@fs.cds', '12345675342');
+(35, 'Pão', 'dwadwa@fw.daw', '31233123123');
 
 -- --------------------------------------------------------
 
@@ -87,6 +86,24 @@ CREATE TABLE `projetos` (
 INSERT INTO `projetos` (`Id`, `Titulo`, `Cliente`, `Membro`, `Abertura`, `Fechamento`, `Observacoes`, `Status`) VALUES
 (3, 'dwadwa', 35, 2, '2022-04-06', '2022-03-31', 'dawd', 'dwada');
 
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `usuarios`
+--
+
+CREATE TABLE `usuarios` (
+  `Usuario` varchar(20) NOT NULL,
+  `Senha` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `usuarios`
+--
+
+INSERT INTO `usuarios` (`Usuario`, `Senha`) VALUES
+('Joao', '12345678');
+
 --
 -- Índices para tabelas despejadas
 --
@@ -112,6 +129,12 @@ ALTER TABLE `projetos`
   ADD PRIMARY KEY (`Id`),
   ADD KEY `ClienteId` (`Cliente`),
   ADD KEY `MembroId` (`Membro`);
+
+--
+-- Índices para tabela `usuarios`
+--
+ALTER TABLE `usuarios`
+  ADD PRIMARY KEY (`Usuario`);
 
 --
 -- AUTO_INCREMENT de tabelas despejadas
