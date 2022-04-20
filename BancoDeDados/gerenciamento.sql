@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 16-Abr-2022 às 01:15
+-- Tempo de geração: 20-Abr-2022 às 06:54
 -- Versão do servidor: 10.4.22-MariaDB
 -- versão do PHP: 8.1.2
 
@@ -20,8 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Banco de dados: `gerenciamento`
 --
-CREATE DATABASE IF NOT EXISTS `gerenciamento` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `gerenciamento`;
 
 -- --------------------------------------------------------
 
@@ -29,7 +27,6 @@ USE `gerenciamento`;
 -- Estrutura da tabela `clientes`
 --
 
-DROP TABLE IF EXISTS `clientes`;
 CREATE TABLE `clientes` (
   `Id` int(11) NOT NULL,
   `Nome` varchar(50) NOT NULL,
@@ -37,13 +34,20 @@ CREATE TABLE `clientes` (
   `Cpf` varchar(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Extraindo dados da tabela `clientes`
+--
+
+INSERT INTO `clientes` (`Id`, `Nome`, `Email`, `Cpf`) VALUES
+(35, 'Pão', 'dwadwa@fw.daw', '31233123123'),
+(36, 'Carlos', 'fe@fs.cds', '12345675342');
+
 -- --------------------------------------------------------
 
 --
 -- Estrutura da tabela `membros`
 --
 
-DROP TABLE IF EXISTS `membros`;
 CREATE TABLE `membros` (
   `Id` int(11) NOT NULL,
   `Nome` varchar(50) NOT NULL,
@@ -51,13 +55,20 @@ CREATE TABLE `membros` (
   `Cpf` varchar(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Extraindo dados da tabela `membros`
+--
+
+INSERT INTO `membros` (`Id`, `Nome`, `Email`, `Cpf`) VALUES
+(1, 'Caio', 'ca@fa.da', '12345678901'),
+(2, 'Joao', 'ca@dfa.ada', '15345678901');
+
 -- --------------------------------------------------------
 
 --
 -- Estrutura da tabela `projetos`
 --
 
-DROP TABLE IF EXISTS `projetos`;
 CREATE TABLE `projetos` (
   `Id` int(11) NOT NULL,
   `Titulo` varchar(50) NOT NULL,
@@ -68,6 +79,13 @@ CREATE TABLE `projetos` (
   `Observacoes` varchar(100) DEFAULT NULL,
   `Status` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `projetos`
+--
+
+INSERT INTO `projetos` (`Id`, `Titulo`, `Cliente`, `Membro`, `Abertura`, `Fechamento`, `Observacoes`, `Status`) VALUES
+(3, 'dwadwa', 35, 2, '2022-04-06', '2022-03-31', 'dawd', 'dwada');
 
 --
 -- Índices para tabelas despejadas
@@ -103,19 +121,19 @@ ALTER TABLE `projetos`
 -- AUTO_INCREMENT de tabela `clientes`
 --
 ALTER TABLE `clientes`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
 
 --
 -- AUTO_INCREMENT de tabela `membros`
 --
 ALTER TABLE `membros`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de tabela `projetos`
 --
 ALTER TABLE `projetos`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- Restrições para despejos de tabelas
