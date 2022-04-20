@@ -50,6 +50,7 @@ O sistema implementado tem o objetivo de ajudar no gerenciamento de uma empresa.
       └── View
       └── Controller
       └── Persistence
+      └── Test
     ```
 ## :computer: Práticas de codificação adotadas:
 
