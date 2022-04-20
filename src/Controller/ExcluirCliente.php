@@ -71,7 +71,7 @@ if($res->num_rows == 1) {
 else {
     echo "<script>
     alert('CPF não encontrado.');
-    location.href ='../View/AlterarCliente.html';
+    location.href ='../View/ExcluirCliente.html';
     </script>";
 }
 
