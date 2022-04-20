@@ -19,7 +19,7 @@ $todos_membros = $membroDao->consultarTodosMembros($conexao);
 
 <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="..\style.css">
 </head>
 
 <body>
@@ -29,15 +29,15 @@ $todos_membros = $membroDao->consultarTodosMembros($conexao);
     </div>
 
     <h1>SISTEMA DE GERENCIMENTO</h1>
-    <h2 class="modulo">MÓDULO DE CADASTROS</h2>
-    <h2 id="Cadastro">Cadastro de Clientes</h2>
+    <h2 class="modulo">MÓDULO DE PROJETOS</h2>
+    <h2 id="Cadastro">Cadastro de Projetos</h2>
 
     <form id="formulario" action="..\..\Controller\Projeto\CadastrarProjeto.php" method="post" autocomplete="off">
         <label for="ptitulo">Titulo:</label><br>
         <input type="text" required id="ptitulo" name="ptitulo" maxlength="50"><br>
 
 
-        <label>Cliente:</label>
+        <label>Cliente:</label><br>
         <select name="pcliente">
             <option value=""></option>
             <?php
@@ -62,7 +62,7 @@ $todos_membros = $membroDao->consultarTodosMembros($conexao);
             ?>
         </select>
         <br>
-        <label>Membro:</label>
+        <label>Membro:</label><br>
         <select name="pmembro">
             <option value=""></option>
             <?php
@@ -98,9 +98,7 @@ $todos_membros = $membroDao->consultarTodosMembros($conexao);
         <label for="pobservacao">Observacao:</label><br>
         <input type="text" required id="pobservacao" name="pobservacao" maxlength="100"><br>
         <label for="pstatus">Status:</label><br>
-        <input type="text" required id="pstatus" name="pstatus" maxlength="10"><br>
-
-
+        <input type="text" required id="pstatus" name="pstatus" maxlength="10"><br><br>
 
 
 
