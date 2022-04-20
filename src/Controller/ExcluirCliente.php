@@ -25,7 +25,7 @@ if($res->num_rows == 1) {
     
     <body>
         <div class='topnav'>
-            <a class='active' href='..\Home.php'>Início</a>
+            <a class='active' href='..\View\Home.php'>Início</a>
             <a href='..\View\Cliente.php'>Voltar</a>
         </div>
     
