@@ -35,8 +35,8 @@ if ($res->num_rows > 0) {
             <body>
             
             <div class='topnav'>
-                <a class='active' href='..\..\index.html'>Início</a>
-                <a href='..\..\View\Projeto.html'>Voltar</a>
+                <a class='active' href='..\..\View\Home.php'>Início</a>
+                <a href='..\..\View\Projeto.php'>Voltar</a>
             </div>
 
             <h2>Projetos</h2><table>
@@ -67,6 +67,6 @@ if ($res->num_rows > 0) {
 } else {
     echo "<script>
     alert('Não há projetos cadastrados');
-    location.href ='../../View/Projeto.html';
+    location.href ='../../View/Projeto.php';
     </script>";
 }

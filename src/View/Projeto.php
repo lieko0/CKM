@@ -1,3 +1,8 @@
+<?php
+
+include('protect.php')
+
+?>
 <!DOCTYPE html>
 <html>
 
@@ -9,7 +14,7 @@
 <body>
 
     <div class="topnav">
-        <a class="active" href="..\index.html">Início</a>
+        <a class="active" href="Home.php">Início</a>
     </div>
 
     <h1 class="cabecalho">SISTEMA DE GERENCIMENTO</h1>

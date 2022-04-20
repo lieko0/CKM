@@ -25,8 +25,8 @@ if($res->num_rows == 1) {
     
     <body>
         <div class='topnav'>
-            <a class='active' href='..\index.html'>Início</a>
-            <a href='..\View\Cliente.html'>Voltar</a>
+            <a class='active' href='..\View\Home.php'>Início</a>
+            <a href='..\View\Cliente.php'>Voltar</a>
         </div>
     
         <h1>SISTEMA DE GERENCIMENTO</h1>
@@ -55,7 +55,7 @@ if($res->num_rows == 1) {
 else {
     echo "<script>
     alert('CPF não encontrado.');
-    location.href ='../View/AlterarCliente.html';
+    location.href ='../View/AlterarCliente.php';
     </script>";
 }
 
