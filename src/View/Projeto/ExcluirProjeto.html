@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="topnav">
+        <a class="active" href="..\..\index.html">Início</a>
+        <a href="..\Projeto.html">Voltar</a>
+    </div>
+
+    <h1>SISTEMA DE GERENCIMENTO</h1>
+    <h2>Excluir Projeto</h2>
+
+    <form id="formulario" action="..\..\Controller\Projeto\ExcluirProjeto.php" method="post" autocomplete="off">
+        <label for="pid">Id:</label><br>
+        <input type="text" required id="pid" name="pid" maxlength="11" title="Digite o Id:"><br><br>
+
+        <input type="submit" value="EXCLUIR">
+        <input type="reset" value="LIMPAR">
+    </form>
+</body>
+
+</html>

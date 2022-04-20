@@ -96,7 +96,7 @@ $todos_membros = $membroDao->consultarTodosMembros($conexao);
 
 
         <label for="pobservacao">Observacao:</label><br>
-        <input type="text" required id="pobservacao" name="pobservacao" maxlength="100"><br>
+        <input type="text" id="pobservacao" name="pobservacao" maxlength="100"><br>
         <label for="pstatus">Status:</label><br>
         <input type="text" required id="pstatus" name="pstatus" maxlength="10"><br>
 

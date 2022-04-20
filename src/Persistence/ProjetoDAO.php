@@ -39,4 +39,18 @@ class ProjetoDAO
         $res = $conn->query($sql);
         return $res;
     }
+
+    function consultarId($id, $conn)
+    {
+        $sql = "SELECT Id, Titulo, Cliente, Membro, Abertura, Fechamento, Observacoes, Status FROM projetos WHERE Id='$id'";
+        $res = $conn->query($sql);
+        return $res;
+    }
+
+    function excluir($id, $conn)
+    {
+        $sql = "DELETE FROM projetos WHERE Id='$id'";
+        $res = $conn->query($sql);
+        return $res;
+    }
 }

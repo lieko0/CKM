@@ -14,7 +14,9 @@ if ($res->num_rows > 0) {
     <!DOCTYPE html>
             <html>
             <head>
-            <style>
+                <meta charset='UTF-8' />
+                <link rel='stylesheet' href='..\..\View\style.css'>
+                <style>
             table {
                 font-family: arial, sans-serif;
                 border-collapse: collapse;
