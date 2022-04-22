@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 20-Abr-2022 às 14:39
+-- Tempo de geração: 22-Abr-2022 às 17:52
 -- Versão do servidor: 10.4.22-MariaDB
 -- versão do PHP: 8.1.2
 
@@ -84,25 +84,8 @@ CREATE TABLE `projetos` (
 --
 
 INSERT INTO `projetos` (`Id`, `Titulo`, `Cliente`, `Membro`, `Abertura`, `Fechamento`, `Observacoes`, `Status`) VALUES
-(3, 'dwadwa', 35, 2, '2022-04-06', '2022-03-31', 'dawd', 'dwada');
-
--- --------------------------------------------------------
-
---
--- Estrutura da tabela `usuarios`
---
-
-CREATE TABLE `usuarios` (
-  `Usuario` varchar(20) NOT NULL,
-  `Senha` varchar(20) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Extraindo dados da tabela `usuarios`
---
-
-INSERT INTO `usuarios` (`Usuario`, `Senha`) VALUES
-('Joao', '12345678');
+(3, 'dwadwa', 35, 2, '2022-04-06', '2022-03-31', 'dawd', 'dwada'),
+(4, 'DWDa', 35, 1, '2022-03-29', '2022-04-13', 'dwadwa', 'dawdwa');
 
 --
 -- Índices para tabelas despejadas
@@ -127,14 +110,9 @@ ALTER TABLE `membros`
 --
 ALTER TABLE `projetos`
   ADD PRIMARY KEY (`Id`),
+  ADD UNIQUE KEY `Titulo` (`Titulo`),
   ADD KEY `ClienteId` (`Cliente`),
   ADD KEY `MembroId` (`Membro`);
-
---
--- Índices para tabela `usuarios`
---
-ALTER TABLE `usuarios`
-  ADD PRIMARY KEY (`Usuario`);
 
 --
 -- AUTO_INCREMENT de tabelas despejadas
@@ -156,7 +134,7 @@ ALTER TABLE `membros`
 -- AUTO_INCREMENT de tabela `projetos`
 --
 ALTER TABLE `projetos`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- Restrições para despejos de tabelas
