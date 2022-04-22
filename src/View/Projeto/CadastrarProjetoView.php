@@ -46,24 +46,19 @@ $todos_membros = $membroDao->consultarTodosMembros($conexao);
         <select name="pcliente">
             <option value=""></option>
             <?php
-            // use a while loop to fetch data 
-            // from the $all_categories variable 
-            // and individually display as an option
+
             while ($cliente = mysqli_fetch_array(
                 $todos_clientes,
                 MYSQLI_ASSOC
             )) :;
             ?>
                 <option value="<?php echo $cliente["Id"];
-                                // The value we usually set is the primary key
                                 ?>">
                     <?php echo $cliente["Nome"] . ' ' . $cliente["Cpf"];
-                    // To show the category name to the user
                     ?>
                 </option>
             <?php
             endwhile;
-            // While loop must be terminated
             ?>
         </select>
         <br>
@@ -71,24 +66,18 @@ $todos_membros = $membroDao->consultarTodosMembros($conexao);
         <select name="pmembro">
             <option value=""></option>
             <?php
-            // use a while loop to fetch data 
-            // from the $all_categories variable 
-            // and individually display as an option
             while ($membro = mysqli_fetch_array(
                 $todos_membros,
                 MYSQLI_ASSOC
             )) :;
             ?>
                 <option value="<?php echo $membro["Id"];
-                                // The value we usually set is the primary key
                                 ?>">
                     <?php echo $membro["Nome"] . ' ' . $membro["Cpf"];
-                    // To show the category name to the user
                     ?>
                 </option>
             <?php
             endwhile;
-            // While loop must be terminated
             ?>
         </select>
 
@@ -104,11 +93,6 @@ $todos_membros = $membroDao->consultarTodosMembros($conexao);
         <input type="text" required id="pobservacao" name="pobservacao" maxlength="100"><br>
         <label for="pstatus">Status:</label><br>
         <input type="text" required id="pstatus" name="pstatus" maxlength="10"><br><br>
-
-
-
-
-
 
         <input type="submit" value="CADASTRAR">
         <input type="reset" value="LIMPAR">
