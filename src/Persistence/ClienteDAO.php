@@ -45,8 +45,25 @@ class ClienteDAO {
 
     function excluir($cpf, $conn) {
         $sql = "DELETE FROM clientes WHERE Cpf='$cpf'";
-        $res = $conn->query($sql);
-        return $res;
+        try {
+            $conn->query($sql);
+            echo "<script>
+                alert('Exclusão bem sucedida');
+                location.href ='../View/ExcluirCliente.php';
+                </script>";
+        } catch (mysqli_sql_exception $e) {
+            if ($e->getCode() == 1451) {
+                echo "<script>
+                alert('Erro: Cliente participa de projeto.');
+                location.href ='../View/CadastrarCliente.php';
+                </script>";
+            } else {
+                echo "<script>
+                alert('Erro ao excluir: .$conn->error');
+                location.href ='../View/ExcluirCliente.php';
+                </script>";
+            }
+        }
     }
 
     function alterar($cliente, $conn, $antigoCpf) {

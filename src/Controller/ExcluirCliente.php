@@ -53,19 +53,7 @@ if($res->num_rows == 1) {
 
     if (isset($_POST["Excluir"]))
     {
-        $res = $clienteDao->excluir($cpf, $conexao);
-
-        if ($res === TRUE) {
-            echo "<script>
-            alert('Exclusão bem sucedida');
-            location.href ='../View/ExcluirCliente.php';
-            </script>";
-        } else {
-            echo "<script>
-            alert('Erro ao excluir.');
-            location.href ='../View/ExcluirCliente.php';
-            </script>";
-        }
+        $clienteDao->excluir($cpf, $conexao);
     }
 }
 else {

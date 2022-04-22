@@ -26,10 +26,17 @@ class ProjetoDAO
             </script>";
         } catch (mysqli_sql_exception $e) {
 
-            echo "<script>
+            if ($e->getCode() == 1062) {
+                echo "<script>
+                alert('Erro: Título digitado já existe.');
+                location.href ='../../View/Projeto/CadastrarProjetoView.php';
+                </script>";
+            } else {
+                echo "<script>
                 alert('Erro no cadastramento: .$conn->error');
                 location.href ='../../View/Projeto/CadastrarProjetoView.php';
                 </script>";
+            }
         }
     }
 
