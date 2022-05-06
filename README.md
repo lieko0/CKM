@@ -64,6 +64,6 @@ O sistema implementado tem o objetivo de ajudar no gerenciamento de uma empresa.
 
 ## :sunglasses: Desenvolvedores
 
-- [Caio Silva](https://github.com/CaioMatheu5) :wolf:
+- [Caio Silva](https://github.com/caiomtls) :wolf:
 - [Katarina Friedrich](https://github.com/katfr) :cat:
 - [Marco Magalhães](https://github.com/lieko0) :owl:
